@@ -1,6 +1,378 @@
+/*--------------------------------------*/
+/*-----------Default-----------*/
+/*--------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-	margin: 0;
-	background-color: lightgrey;
-	font: 1em helvetica, arial, sans-serif;
-	background-image: url('./../img/bg.jpg');
-} 
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 247, 247);
+    font-size: 1.250em;
+    font-weight: 300;
+    color: #555;
+    line-height: 145%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------------------------*/
+/*-----------Reusable-----------*/
+/*--------------------------------------*/
+
+h2 {
+    font-size: 200%;
+    margin-bottom: .625em;
+}
+
+input[type=text], button {
+    outline: none;
+}
+
+p {
+    font-size: 70%;
+    font-weight: 500;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0 auto;
+}
+
+button {
+    opacity: .8;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+/*--------------------------------------*/
+/*-----------Header-----------*/
+/*--------------------------------------*/
+
+header {
+    background-color: #131921;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.box-logo, .main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.main-logo {
+    height: 2em;
+}
+
+.main-nav a {
+    color: #fff;
+}
+
+.main-nav li {
+    margin: auto 1em;
+}
+
+/*-----------Buttons-----------*/
+
+.main-nav  button {
+    background-color: #FEBD69;
+    width: 8em;
+    height: 3em;
+    padding: 8%;
+    border: none;
+    border-radius: 12.5em;
+}
+
+.main-nav button a {
+    color: #000;
+    font-size: 130%;
+}
+
+/*-----------Links-----------*/
+
+.btn a {
+    font-weight: bold;
+    letter-spacing: .125em;
+    border-bottom: .125em solid transparent;
+}
+
+.btn a:hover {
+    color: #FEBD69;
+    border-bottom: .125em solid #FEBD69;
+    transition: color .2s, border-bottom .2s;
+}
+
+/*-----------Cart-----------*/
+
+.cart-shopping img {
+    height: 1.5em;
+}
+
+.cart-shopping li {
+    margin:auto .125em;
+}
+
+/*-----------Search Bar-----------*/
+
+.search-box {
+    display: flex;
+    margin-left: 2em;
+}
+
+.search-box img {
+    height: 1.5em;
+}
+
+.bar-search {
+    width: 40em;
+    height: 3em;
+    padding: 2%;
+    border: .250em solid #FEBD69;
+    border-right: none;
+    border-radius: 0.625em 0 0 0.625em;
+}
+
+.search-box button {
+    width: 4em;
+    height: 3em;
+    background-color: #FEBD69;
+    border: .250em solid #FEBD69;
+    border-left: none;
+    border-radius: 0 0.625em 0.625em 0;
+}
+
+/*--------------------------------------*/
+/*-----------Footer-----------*/
+/*--------------------------------------*/
+
+footer{
+    background-color: #232F3E;
+}
+
+footer section:first-of-type {
+    border-bottom: 0.031em solid #fff;
+ }
+
+/*-----------First Footer-----------*/
+
+.footer-box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.first-footer a {
+    color: #fff;
+    font-size: 70%;
+    border-bottom: 0.063em solid transparent;
+    padding-bottom: 0.063em solid #fff;
+}
+
+.first-footer a:hover {
+    border-bottom: 0.063em solid #fff;
+    transition: border-bottom .2s;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 100%;
+    color: #fff;
+}
+
+.first-footer ul li {
+    margin-top: 0.313em;
+}
+
+/*-----------Second Footer-----------*/
+
+.second-footer ul:first-of-type {
+    display: flex;
+}
+
+#country {
+    width: 8em;
+    padding: .5em;
+    margin-left: 1em;
+    border-radius: 0.625em;
+    color: #fff;
+    background-color:#232F3E;
+    border: .125em solid #fff;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list img {
+    height: 2em;
+    margin-right: 2em;
+}
+
+.social-list li {
+    margin: auto 0;
+}
+
+.social-list li:last-of-type img {
+    margin-right: 0;
+}
+
+.social-list li:first-of-type {
+    color: #fff;
+    margin-right: 2em;
+    font-weight: bold;
+}
+
+/*-----------Third Footer-----------*/
+
+.third-footer {
+    background-color: #131A22;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.third-footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.third-footer ul a {
+    color: #fff;
+    font-size: 90%;
+    border-bottom: 0.063em solid transparent;
+    padding-bottom: .125em;
+}
+
+.third-footer ul a:hover {
+    border-bottom: 0.063em solid #fff;
+    transition: border-bottom .2s;
+}
+
+.third-footer p {
+    margin-top: 1.250em;
+    text-align: center;
+    color: rgb(141, 141, 141);
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*-----------Product Page-----------*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.product-box {
+    display: flex;
+    margin: 5em auto;
+}
+
+.product-bar-list {
+    margin-right: 2%;
+    width: 30%;
+}
+
+.product-bar-list li:first-of-type a {
+    font-size: 80%;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-bar-list a {
+    font-size: 70%;
+    font-weight: 500;
+    color: #555555;
+}
+
+.product-bar-list a:hover , .product-desc:hover {
+    color: #e67e22;
+    transition: color .2s;
+}
+
+.product-photo {
+    height: 9em;
+    display: block;
+    margin: .5em auto;
+}
+
+.rating {
+    height: 1em;
+}
+
+.prime-logo {
+    height: 1.5em;
+}
+
+.product-best {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #fff;
+}
+
+.product-view {
+    border: 0.031em solid #cfcfcf;
+    padding: 4%;
+}
+
+.product-desc {
+    font-weight: bold;
+    color:#0066C0;
+
+}
+
+.rating-box {
+    display: flex;
+    margin: .5em 0;
+}
+
+.rating-box li:last-of-type {
+    margin: auto 0 auto .5em;
+    font-weight: 400;
+    font-size: 70%;
+    color: #555;
+}
+
+.product-price {
+    display: flex;
+}
+
+.product-price li:first-child a {
+    color: red;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.addCart {
+	padding: 3% 5%;
+	background-color: rgb(243, 186, 186);
+	color: #000;
+	border: none;
+	font-size: 1em;
+}
+
+.addCartBox {
+	text-align: center;
+	margin-top: 1em;
+}
